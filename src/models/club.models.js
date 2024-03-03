@@ -47,7 +47,7 @@ const clubSchema = new mongoose.Schema({
   },
   clubJugadores: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Jugadores",
+    ref: "Jugador",
   },
 });
 
