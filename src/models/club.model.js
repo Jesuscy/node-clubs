@@ -49,6 +49,11 @@ const clubSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Jugador",
   },
+  clubLiga: {
+    type: String,
+    required: true,
+    trim: true,
+  }
 });
 
 const Club = mongoose.model("Club", clubSchema);
