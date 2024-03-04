@@ -13,7 +13,8 @@ const getClub = async (req, res, next) => {
     //1. OBTENGO LA ID QUE HA SOLICITADO EL USUARIO
     const id = req.params.id;
     //2. BUSCO EN LA BBDD POR ID
-    const club = await Club.findById(id).populate("Jugador").populate("Titulo");
+    const club = await Club.findById(id);
+    //.populate("Jugador").populate("Titulo");
     //console.log(club);
     //3. RESPONDO AL USUARIO
     res.status(200).json({

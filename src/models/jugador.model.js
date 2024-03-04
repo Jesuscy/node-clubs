@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const jugadorSchema = new mongoose.Schema({
 
     equipoId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Club',  // Referencia al modelo de Equipo
         required: true,
     },
