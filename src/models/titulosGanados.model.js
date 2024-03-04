@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const titulosGanadosSchema = new mongoose.Schema({
 
     equipoId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Club',  // Referencia al modelo de Equipo
         required: true,
     },
@@ -24,7 +24,7 @@ const titulosGanadosSchema = new mongoose.Schema({
     }       
 });
 
-const titulosGanados = mongoose.model('Titulos', titulosGanadosSchema);
+const Titulos = mongoose.model('Titulos', titulosGanadosSchema);
 
 module.exports = Titulos;
 
