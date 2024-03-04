@@ -20,7 +20,6 @@ const jugadorSchema = new mongoose.Schema({
 
     jugadorPosicion: {
         type: String,
-        ref: 'Contributor',
         required: true,
 
     },
