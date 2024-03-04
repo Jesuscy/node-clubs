@@ -12,7 +12,7 @@ const clubSchema = new mongoose.Schema({
     trim: true,
   },
   clubFundacion: {
-    type: number,
+    type: Number,
     required: true,
     trim: true,
   },
