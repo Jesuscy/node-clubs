@@ -4,7 +4,7 @@ const jugadorSchema = new mongoose.Schema({
 
     equipoId: {
         type: Schema.Types.ObjectId,
-        ref: 'Equipo',  // Referencia al modelo de Equipo
+        ref: 'Club',  // Referencia al modelo de Equipo
         required: true,
     },
 
