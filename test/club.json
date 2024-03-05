@@ -1,0 +1,20 @@
+{
+    "clubId": 1,
+    "clubNombre": "Real Madrid",
+    "clubEstadio": "Santiago Bernabeu",
+    "clubPresidente": "Florentino Pérez",
+    "clubCapitalDeInversion": 10000,
+    "clubSitioWebOficial": "www.realmadrid.com",
+    "clubEntrenador": "Carlo Ancielotti",
+    "clubTitulosGanados": [
+        {
+            "idTitulo": "65e76172f53fe7395fabe038"
+        }
+    ],
+    "clubJugadores": [
+        {
+            "idJugador": "65e76185f53fe7395fabe03a"
+        }
+    ],
+    "clubLiga": "LaLiga"
+}

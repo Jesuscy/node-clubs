@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 const jugadorSchema = new mongoose.Schema({
 
-    equipoId: {
+    clubId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Club',  // Referencia al modelo de Equipo
+        ref: 'Club',  // Referencia al modelo de club
         required: true,
     },
 

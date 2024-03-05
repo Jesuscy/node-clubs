@@ -54,6 +54,9 @@ const clubSchema = new mongoose.Schema({
     required: true,
     trim: true,
   }
+
+
+
 });
 
 const Club = mongoose.model("Club", clubSchema);
