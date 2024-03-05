@@ -5,6 +5,8 @@ const cors = require('cors');
 const HTTPSTATUSCODE = require('./utils/httpStatusCode');
 const { connectMongo } = require('./utils/db');
 const clubRouter = require('./src/routes/club.routes');
+const jugadorRouter = require('./src/routes/jugador.routes');
+const tituloRouter = require('./src/routes/titulo.routes');
 
 
 // AQUI EL ROUTER DE CLUB
@@ -35,6 +37,8 @@ app.use(express.urlencoded({ extended: true }));
 
 /* ROUTES */
 app.use('/club', clubRouter);
+app.use('/jugador', jugadorRouter);
+app.use('/titulo', tituloRouter);
 
 
 // ruta de bienvenida

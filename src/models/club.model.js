@@ -34,21 +34,22 @@ const clubSchema = new mongoose.Schema({
   clubSitioWebOficial: {
     type: String,
     trim: true,
-    unique: true,
   },
   clubEntrenador: {
     type: String,
     required: true,
     trim: true,
   },
-  clubTitulosGanados: {
+  clubTitulosGanados: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Titulos",
-  },
-  clubJugadores: {
+    required: true
+  }],
+  clubJugadores: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Jugador",
-  },
+  }],
+
   clubLiga: {
     type: String,
     required: true,
